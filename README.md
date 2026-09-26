@@ -65,7 +65,7 @@ HackerRank-3rdSem-Portfolio/
 └── README.md
 
 
-# Mandatory HackerRank Problems
+# HackerRank Problems
 
 ## 1. Diagonal Difference
 
@@ -74,7 +74,7 @@ The problem requires calculating the absolute difference between the sums of the
 Implementation: Java 8
 
 Approach:
-The matrix is traversed once while calculating the primary diagonal sum and secondary diagonal sum. The absolute difference between the two sums is then returned.
+The matrix is traversed once. During the traversal, the elements belonging to the primary diagonal are added to one sum, while the elements belonging to the secondary diagonal are added to another sum. The absolute difference between the two diagonal sums is then calculated.
 
 Time Complexity: O(N)
 
@@ -83,15 +83,19 @@ Space Complexity: O(1)
 HackerRank:
 https://www.hackerrank.com/challenges/diagonal-difference/problem
 
+Submission Screenshot:
+
+![Diagonal Difference](HR1.png)
+
 
 ## 2. Dynamic Array
 
-The problem involves maintaining multiple sequences and processing queries to determine which sequence should be accessed and modified.
+The problem requires maintaining multiple dynamic sequences and processing queries that determine which sequence should be accessed or modified.
 
 Implementation: Java 8
 
 Approach:
-The required sequence is determined using the query parameters. Elements are added to the selected sequence, and type-2 queries retrieve the required element while updating the answer variable.
+An array of sequences is maintained. For each query, the sequence index is calculated using the query values and the current value of the last answer. Type-1 queries add an element to the selected sequence, while type-2 queries retrieve an element and update the last answer.
 
 Time Complexity: O(N + Q)
 
@@ -100,15 +104,19 @@ Space Complexity: O(N)
 HackerRank:
 https://www.hackerrank.com/challenges/dynamic-array/problem
 
+Submission Screenshot:
+
+![Dynamic Array](HR2.png)
+
 
 ## 3. Time Conversion
 
-The problem converts a given time from the 12-hour AM/PM format into the 24-hour format.
+The problem requires converting a time from the 12-hour AM/PM format into the 24-hour format.
 
 Implementation: Java 8
 
 Approach:
-The hour, minute, second, and AM/PM components are identified from the input string. The hour is adjusted according to the AM or PM designation and the final time is constructed in 24-hour format.
+The input string is separated into the hour, minute, second, and AM/PM components. For PM times, 12 is added when required, while 12 AM is converted to 00. The resulting values are then combined into the required 24-hour format.
 
 Time Complexity: O(1)
 
@@ -117,15 +125,19 @@ Space Complexity: O(1)
 HackerRank:
 https://www.hackerrank.com/challenges/time-conversion/problem
 
+Submission Screenshot:
+
+![Time Conversion](HR3.png)
+
 
 ## 4. Compare the Triplets
 
-The problem compares the scores of Alice and Bob across three categories and calculates the points obtained by each participant.
+The problem requires comparing the scores of Alice and Bob across three categories and calculating the points obtained by each participant.
 
 Implementation: Java 8
 
 Approach:
-Each of the three corresponding scores is compared. A point is awarded to the participant with the higher score, while equal scores do not contribute a point.
+Each corresponding score of Alice and Bob is compared. If Alice's score is higher, Alice receives one point. If Bob's score is higher, Bob receives one point. Equal scores do not contribute a point.
 
 Time Complexity: O(1)
 
@@ -134,15 +146,19 @@ Space Complexity: O(1)
 HackerRank:
 https://www.hackerrank.com/challenges/compare-the-triplets/problem
 
+Submission Screenshot:
+
+![Compare the Triplets](HR4.png)
+
 
 ## 5. Sparse Arrays
 
-The problem determines how many times each query string occurs in a collection of input strings.
+The problem requires determining how many times each query string occurs in a collection of input strings.
 
 Implementation: Java 8
 
 Approach:
-The input strings are stored and their frequencies are counted. Each query is then matched against the stored strings to determine its occurrence count.
+The strings are processed and their frequencies are maintained. Each query is then checked against the stored frequency information to determine how many times it occurs.
 
 Time Complexity: O(N + Q)
 
@@ -150,6 +166,10 @@ Space Complexity: O(N)
 
 HackerRank:
 https://www.hackerrank.com/challenges/sparse-arrays/problem
+
+Submission Screenshot:
+
+![Sparse Arrays](HR5.png)
 
 
 # Complexity Summary
@@ -161,31 +181,6 @@ https://www.hackerrank.com/challenges/sparse-arrays/problem
 | Time Conversion | O(1) | O(1) |
 | Compare the Triplets | O(1) | O(1) |
 | Sparse Arrays | O(N + Q) | O(N) |
-
-
-# Accepted Submission Screenshots
-
-The following screenshots document the accepted HackerRank submissions for the five mandatory problems.
-
-## HR1 - Diagonal Difference
-
-![Diagonal Difference](HR1.png)
-
-## HR2 - Dynamic Array
-
-![Dynamic Array](HR2.png)
-
-## HR3 - Time Conversion
-
-![Time Conversion](HR3.png)
-
-## HR4 - Compare the Triplets
-
-![Compare the Triplets](HR4.png)
-
-## HR5 - Sparse Arrays
-
-![Sparse Arrays](HR5.png)
 
 
 # HackerRank 3-Star Achievement
@@ -200,10 +195,7 @@ https://www.hackerrank.com/profile/omsai2k7
 
 # Additional HackerRank Practice
 
-In addition to the five mandatory problems, I completed additional HackerRank challenges to improve my algorithmic problem-solving skills and achieve the required HackerRank milestone.
-
-The accepted submissions are documented below.
-
+In addition to the five mandatory problems, I completed several additional HackerRank challenges to further develop my algorithmic problem-solving skills.
 
 ## 6. Simple Array Sum
 
@@ -212,7 +204,7 @@ The problem requires calculating the sum of all elements present in an integer a
 Implementation: Java 8
 
 Approach:
-The array is traversed from beginning to end and each element is added to a running sum.
+The array is traversed from the first element to the last element. Each value is added to a running sum, which produces the total sum of the array.
 
 Time Complexity: O(N)
 
@@ -233,7 +225,7 @@ The problem requires calculating the sum of a large number of integers where the
 Implementation: Java 8
 
 Approach:
-The values are stored using the long data type and added together during a single traversal of the array.
+The values are stored using the long data type. Each value is added to a running total while traversing the array once.
 
 Time Complexity: O(N)
 
@@ -249,19 +241,19 @@ Submission Screenshot:
 
 ## 8. Plus Minus
 
-The problem requires calculating the proportions of positive, negative, and zero values in an array.
+The problem requires calculating the proportions of positive, negative, and zero values present in an array.
 
 Implementation: Java 8
 
 Approach:
-The array is traversed once while maintaining separate counters for positive numbers, negative numbers, and zeros. Each count is divided by the total number of elements to obtain the required ratios.
+The array is traversed once while maintaining separate counters for positive values, negative values, and zeros. Each count is divided by the total number of elements to calculate the required proportions.
 
 Time Complexity: O(N)
 
 Space Complexity: O(1)
 
 HackerRank:
-https://www.hackerrank.com/challenges/one-week-preparation-kit-plus-minus/problem
+https://www.hackerrank.com/challenges/plus-minus/problem
 
 Submission Screenshot:
 
@@ -270,12 +262,12 @@ Submission Screenshot:
 
 ## 9. Staircase
 
-The problem requires printing a right-aligned staircase pattern of a specified height.
+The problem requires printing a right-aligned staircase pattern with a specified height.
 
 Implementation: Java 8
 
 Approach:
-Nested loops are used to print the required number of spaces followed by the required number of hash characters for each row.
+Nested loops are used to generate each row of the staircase. The required number of spaces is printed first, followed by the required number of hash characters.
 
 Time Complexity: O(N²)
 
@@ -296,7 +288,7 @@ The problem requires finding the minimum and maximum sums that can be obtained b
 Implementation: Java 8
 
 Approach:
-The total sum is calculated while identifying the minimum and maximum values. The minimum sum is obtained by excluding the maximum value, while the maximum sum is obtained by excluding the minimum value.
+The total sum of all five values is calculated. The minimum sum is obtained by subtracting the largest value from the total, while the maximum sum is obtained by subtracting the smallest value.
 
 Time Complexity: O(N)
 
@@ -317,7 +309,7 @@ The problem requires determining how many candles have the maximum height.
 Implementation: Java 8
 
 Approach:
-The array is traversed while maintaining the current maximum height and the number of times that maximum occurs.
+The array is traversed while maintaining the maximum candle height and a counter for the number of candles having that height. When a new maximum is found, the counter is reset.
 
 Time Complexity: O(N)
 
@@ -333,12 +325,12 @@ Submission Screenshot:
 
 ## 12. Grading Students
 
-The problem requires rounding student grades according to specified grading rules.
+The problem requires modifying student grades according to the specified rounding rules.
 
 Implementation: Java 8
 
 Approach:
-Each grade is examined individually. Grades below the minimum passing value are not rounded, while eligible grades are rounded to the next multiple of five when the difference is less than the specified threshold.
+Each grade is examined individually. Grades below the passing threshold remain unchanged. For eligible grades, the difference between the grade and the next multiple of five is checked. The grade is rounded when the difference satisfies the required condition.
 
 Time Complexity: O(N)
 
@@ -354,12 +346,12 @@ Submission Screenshot:
 
 ## 13. Kangaroo
 
-The problem determines whether two kangaroos moving at different starting positions and jump distances can land at the same location at the same time.
+The problem determines whether two kangaroos starting at different positions and moving at different jump rates can land at the same location at the same time.
 
 Implementation: Java 8
 
 Approach:
-The starting positions and jump distances are compared mathematically to determine whether both kangaroos can reach the same position after the same number of jumps.
+The initial positions and jump distances are compared mathematically. The problem can be reduced to determining whether there is a non-negative integer number of jumps that results in both kangaroos reaching the same position simultaneously.
 
 Time Complexity: O(1)
 
@@ -375,12 +367,12 @@ Submission Screenshot:
 
 ## 14. Breaking the Records
 
-The problem counts how many times a player breaks their previous highest and lowest score records during a season.
+The problem requires counting how many times a player breaks their highest and lowest scoring records during a season.
 
 Implementation: Java 8
 
 Approach:
-The scores are traversed in order while maintaining the current maximum and minimum scores. Whenever a new maximum or minimum is encountered, the corresponding counter is increased.
+The scores are processed sequentially. The current highest and lowest scores are maintained. Whenever a score exceeds the highest score or falls below the lowest score, the corresponding record counter is increased.
 
 Time Complexity: O(N)
 
@@ -396,12 +388,12 @@ Submission Screenshot:
 
 ## 15. Apple and Orange
 
-The problem determines how many apples and oranges land within a specified house range after being thrown from their respective trees.
+The problem requires determining how many apples and oranges land within the boundaries of a house.
 
 Implementation: Java 8
 
 Approach:
-The landing position of every fruit is calculated by adding its distance to the position of the corresponding tree. The resulting position is checked to determine whether it falls within the house boundaries.
+For each fruit, its landing position is calculated by adding its distance from the tree to the tree's position. The resulting position is checked against the left and right boundaries of the house.
 
 Time Complexity: O(A + O)
 
@@ -417,12 +409,12 @@ Submission Screenshot:
 
 ## 16. Migratory Birds
 
-The problem requires identifying the bird type that appears most frequently in the given list, with the smallest type number selected when frequencies are equal.
+The problem requires finding the bird type that occurs most frequently in the given list. If multiple types have the same highest frequency, the smallest type number is selected.
 
 Implementation: Java 8
 
 Approach:
-The frequency of each bird type is counted. The type with the highest frequency is selected, and ties are resolved by choosing the smaller bird type number.
+The frequency of each bird type is counted while processing the array. The type with the highest frequency is selected, with the smaller type number being preferred when frequencies are equal.
 
 Time Complexity: O(N)
 
@@ -443,7 +435,7 @@ The problem requires calculating the sum of two integers.
 Implementation: Java 8
 
 Approach:
-The two input integers are read and directly added together.
+The two input integers are read and added together. The resulting value is returned as the answer.
 
 Time Complexity: O(1)
 
@@ -459,12 +451,12 @@ Submission Screenshot:
 
 ## 18. Sales by Match
 
-The problem determines the number of matching pairs of socks in a pile.
+The problem requires determining the number of matching pairs of socks in a pile.
 
 Implementation: Java 8
 
 Approach:
-The frequency of each sock colour is tracked. Every two socks of the same colour form one pair.
+The frequency of each sock colour is tracked. Whenever two socks of the same colour are available, they form one pair. The total number of pairs is calculated from the frequencies.
 
 Time Complexity: O(N)
 
@@ -480,12 +472,12 @@ Submission Screenshot:
 
 ## 19. Cut the Sticks
 
-The problem repeatedly cuts all sticks by the length of the shortest remaining stick and records the number of sticks before each cut.
+The problem requires repeatedly cutting the sticks by the length of the shortest remaining stick and reporting the number of sticks before each cut.
 
 Implementation: Java 8
 
 Approach:
-The remaining stick lengths are processed to identify the smallest length. After each cut, the number of remaining sticks is recorded and sticks that reach zero length are removed from further processing.
+The shortest remaining stick length is identified. All sticks are reduced by that length, and sticks that reach zero are removed. The process continues until no sticks remain.
 
 Time Complexity: O(N²)
 
@@ -499,17 +491,22 @@ Submission Screenshot:
 ![Cut the Sticks](HR19.png)
 
 
-## 20. Additional HackerRank Submission
+## 20. Additional HackerRank Practice
 
-This screenshot documents the additional HackerRank problem submission included as HR20.
+This screenshot documents the additional HackerRank problem included as HR20.
 
 Implementation: Java 8
 
-The screenshot provides evidence of the accepted HackerRank submission.
+Approach:
+The screenshot provides evidence of the accepted HackerRank submission and forms part of the additional problem-solving practice completed for this portfolio.
+
+Time Complexity: Not documented
+
+Space Complexity: Not documented
 
 Submission Screenshot:
 
-![Additional HackerRank Submission](HR20.png)
+![Additional HackerRank Practice](HR20.png)
 
 
 # Additional Practice Summary
@@ -530,7 +527,7 @@ Submission Screenshot:
 | 17 | Solve Me First | HR17.png |
 | 18 | Sales by Match | HR18.png |
 | 19 | Cut the Sticks | HR19.png |
-| 20 | Additional HackerRank Submission | HR20.png |
+| 20 | Additional HackerRank Practice | HR20.png |
 
 
 # Key Algorithmic Techniques
