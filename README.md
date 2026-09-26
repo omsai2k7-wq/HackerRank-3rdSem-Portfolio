@@ -20,7 +20,8 @@ Platform: HackerRank
 
 Repository Platform: GitHub
 
-## Repository Structure
+
+# Repository Structure
 
 HackerRank-3rdSem-Portfolio/
 │
@@ -58,15 +59,13 @@ HackerRank-3rdSem-Portfolio/
 ├── HR17.png
 ├── HR18.png
 ├── HR19.png
+├── HR20.png
 │
 ├── 3-Star-Badge.png
 └── README.md
 
 
 # Mandatory HackerRank Problems
-
-The following five problems were completed as part of the required coursework.
-
 
 ## 1. Diagonal Difference
 
@@ -75,7 +74,7 @@ The problem requires calculating the absolute difference between the sums of the
 Implementation: Java 8
 
 Approach:
-The matrix is traversed once while simultaneously calculating the primary diagonal sum and secondary diagonal sum. The absolute difference between the two sums is then returned.
+The matrix is traversed once while calculating the primary diagonal sum and secondary diagonal sum. The absolute difference between the two sums is then returned.
 
 Time Complexity: O(N)
 
@@ -201,9 +200,9 @@ https://www.hackerrank.com/profile/omsai2k7
 
 # Additional HackerRank Practice
 
-In addition to the five mandatory problems, I completed several additional HackerRank challenges to improve my algorithmic problem-solving skills and achieve the required HackerRank milestone.
+In addition to the five mandatory problems, I completed additional HackerRank challenges to improve my algorithmic problem-solving skills and achieve the required HackerRank milestone.
 
-The accepted submissions for these additional problems are documented through HR6.png to HR19.png.
+The accepted submissions are documented below.
 
 
 ## 6. Simple Array Sum
@@ -222,6 +221,10 @@ Space Complexity: O(1)
 HackerRank:
 https://www.hackerrank.com/challenges/simple-array-sum/problem
 
+Submission Screenshot:
+
+![Simple Array Sum](HR6.png)
+
 
 ## 7. A Very Big Sum
 
@@ -238,6 +241,10 @@ Space Complexity: O(1)
 
 HackerRank:
 https://www.hackerrank.com/challenges/a-very-big-sum/problem
+
+Submission Screenshot:
+
+![A Very Big Sum](HR7.png)
 
 
 ## 8. Plus Minus
@@ -256,6 +263,10 @@ Space Complexity: O(1)
 HackerRank:
 https://www.hackerrank.com/challenges/one-week-preparation-kit-plus-minus/problem
 
+Submission Screenshot:
+
+![Plus Minus](HR8.png)
+
 
 ## 9. Staircase
 
@@ -273,6 +284,10 @@ Space Complexity: O(1)
 HackerRank:
 https://www.hackerrank.com/challenges/staircase/problem
 
+Submission Screenshot:
+
+![Staircase](HR9.png)
+
 
 ## 10. Mini-Max Sum
 
@@ -281,7 +296,7 @@ The problem requires finding the minimum and maximum sums that can be obtained b
 Implementation: Java 8
 
 Approach:
-The values are analysed to determine the smallest and largest possible sums. The total sum can also be used to calculate the minimum and maximum values by excluding the appropriate element.
+The total sum is calculated while identifying the minimum and maximum values. The minimum sum is obtained by excluding the maximum value, while the maximum sum is obtained by excluding the minimum value.
 
 Time Complexity: O(N)
 
@@ -289,6 +304,10 @@ Space Complexity: O(1)
 
 HackerRank:
 https://www.hackerrank.com/challenges/mini-max-sum/problem
+
+Submission Screenshot:
+
+![Mini-Max Sum](HR10.png)
 
 
 ## 11. Birthday Cake Candles
@@ -307,6 +326,10 @@ Space Complexity: O(1)
 HackerRank:
 https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 
+Submission Screenshot:
+
+![Birthday Cake Candles](HR11.png)
+
 
 ## 12. Grading Students
 
@@ -324,6 +347,10 @@ Space Complexity: O(1)
 HackerRank:
 https://www.hackerrank.com/challenges/grading/problem
 
+Submission Screenshot:
+
+![Grading Students](HR12.png)
+
 
 ## 13. Kangaroo
 
@@ -332,7 +359,7 @@ The problem determines whether two kangaroos moving at different starting positi
 Implementation: Java 8
 
 Approach:
-The positions and jump rates are analysed mathematically to determine whether a common position can be reached after the same number of jumps.
+The starting positions and jump distances are compared mathematically to determine whether both kangaroos can reach the same position after the same number of jumps.
 
 Time Complexity: O(1)
 
@@ -340,6 +367,10 @@ Space Complexity: O(1)
 
 HackerRank:
 https://www.hackerrank.com/challenges/kangaroo/problem
+
+Submission Screenshot:
+
+![Kangaroo](HR13.png)
 
 
 ## 14. Breaking the Records
@@ -358,6 +389,10 @@ Space Complexity: O(1)
 HackerRank:
 https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 
+Submission Screenshot:
+
+![Breaking the Records](HR14.png)
+
 
 ## 15. Apple and Orange
 
@@ -374,6 +409,10 @@ Space Complexity: O(1)
 
 HackerRank:
 https://www.hackerrank.com/challenges/apple-and-orange/problem
+
+Submission Screenshot:
+
+![Apple and Orange](HR15.png)
 
 
 ## 16. Migratory Birds
@@ -392,6 +431,10 @@ Space Complexity: O(K)
 HackerRank:
 https://www.hackerrank.com/challenges/migratory-birds/problem
 
+Submission Screenshot:
+
+![Migratory Birds](HR16.png)
+
 
 ## 17. Solve Me First
 
@@ -408,6 +451,10 @@ Space Complexity: O(1)
 
 HackerRank:
 https://www.hackerrank.com/challenges/solve-me-first/problem
+
+Submission Screenshot:
+
+![Solve Me First](HR17.png)
 
 
 ## 18. Sales by Match
@@ -426,6 +473,10 @@ Space Complexity: O(K)
 HackerRank:
 https://www.hackerrank.com/challenges/sock-merchant/problem
 
+Submission Screenshot:
+
+![Sales by Match](HR18.png)
+
 
 ## 19. Cut the Sticks
 
@@ -436,32 +487,50 @@ Implementation: Java 8
 Approach:
 The remaining stick lengths are processed to identify the smallest length. After each cut, the number of remaining sticks is recorded and sticks that reach zero length are removed from further processing.
 
-Time Complexity: O(N²) for the direct repeated-processing approach
+Time Complexity: O(N²)
 
 Space Complexity: O(N)
 
 HackerRank:
 https://www.hackerrank.com/challenges/cut-the-sticks/problem
 
+Submission Screenshot:
+
+![Cut the Sticks](HR19.png)
+
+
+## 20. Additional HackerRank Submission
+
+This screenshot documents the additional HackerRank problem submission included as HR20.
+
+Implementation: Java 8
+
+The screenshot provides evidence of the accepted HackerRank submission.
+
+Submission Screenshot:
+
+![Additional HackerRank Submission](HR20.png)
+
 
 # Additional Practice Summary
 
-| No. | Problem | Time Complexity | Space Complexity |
-|---|---|---|---|
-| 6 | Simple Array Sum | O(N) | O(1) |
-| 7 | A Very Big Sum | O(N) | O(1) |
-| 8 | Plus Minus | O(N) | O(1) |
-| 9 | Staircase | O(N²) | O(1) |
-| 10 | Mini-Max Sum | O(N) | O(1) |
-| 11 | Birthday Cake Candles | O(N) | O(1) |
-| 12 | Grading Students | O(N) | O(1) |
-| 13 | Kangaroo | O(1) | O(1) |
-| 14 | Breaking the Records | O(N) | O(1) |
-| 15 | Apple and Orange | O(A + O) | O(1) |
-| 16 | Migratory Birds | O(N) | O(K) |
-| 17 | Solve Me First | O(1) | O(1) |
-| 18 | Sales by Match | O(N) | O(K) |
-| 19 | Cut the Sticks | O(N²) | O(N) |
+| No. | Problem | Screenshot |
+|---|---|---|
+| 6 | Simple Array Sum | HR6.png |
+| 7 | A Very Big Sum | HR7.png |
+| 8 | Plus Minus | HR8.png |
+| 9 | Staircase | HR9.png |
+| 10 | Mini-Max Sum | HR10.png |
+| 11 | Birthday Cake Candles | HR11.png |
+| 12 | Grading Students | HR12.png |
+| 13 | Kangaroo | HR13.png |
+| 14 | Breaking the Records | HR14.png |
+| 15 | Apple and Orange | HR15.png |
+| 16 | Migratory Birds | HR16.png |
+| 17 | Solve Me First | HR17.png |
+| 18 | Sales by Match | HR18.png |
+| 19 | Cut the Sticks | HR19.png |
+| 20 | Additional HackerRank Submission | HR20.png |
 
 
 # Key Algorithmic Techniques
@@ -503,7 +572,7 @@ Through this activity, I developed a more systematic approach to algorithmic pro
 
 I learned to analyse problem requirements, identify suitable algorithms and data structures, implement solutions using Java, test solutions against different cases, and evaluate their time and space complexity.
 
-The mandatory problems provided practice with arrays, matrices, strings, dynamic arrays, and frequency-based searching. The additional HackerRank problems provided further practice with mathematical reasoning, array manipulation, frequency counting, conditional logic, sorting-related concepts, and iterative processing.
+The mandatory problems provided practice with arrays, matrices, strings, dynamic arrays, and frequency-based searching. The additional HackerRank problems provided further practice with mathematical reasoning, array manipulation, frequency counting, conditional logic, pattern generation, and iterative processing.
 
 The activity also reinforced the importance of considering computational complexity while designing a solution. Instead of focusing only on obtaining the correct output, I learned to consider how efficiently a solution performs as the input size increases.
 
