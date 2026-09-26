@@ -4,7 +4,7 @@
 
 This repository contains my solutions to the mandatory HackerRank algorithmic problem-solving challenges for the 3rd Semester B.Tech CSE Studio Activity.
 
-All solutions are implemented in Java 8 with a focus on clean code, efficient algorithms, and appropriate time and space complexity.
+All mandatory solutions are implemented in Java 8 with a focus on clean code, efficient algorithms, and appropriate time and space complexity.
 
 ---
 
@@ -41,7 +41,17 @@ HackerRank-3rdSem-Portfolio/
 ├── Sparse-Arrays/
 │   └── Solution.java
 │
+├── Extra-Problem-Screenshots/
+│   └── [additional HackerRank submission screenshots]
+│
+├── HR1.png
+├── HR2.png
+├── HR3.png
+├── HR4.png
+├── HR5.png
+├── 3-Star-Badge.png
 └── README.md
+```
 
 ---
 
@@ -133,6 +143,31 @@ I have achieved a 3-Star Problem Solving badge on HackerRank as required for thi
 
 ---
 
+## Additional HackerRank Practice
+
+To further strengthen my Problem Solving skills and achieve the required HackerRank milestone, I also completed additional HackerRank challenges beyond the five mandatory problems.
+
+The accepted submissions are documented in the `Extra-Problem-Screenshots` folder.
+
+Additional problems completed include:
+
+- Simple Array Sum
+- A Very Big Sum
+- Plus Minus
+- Staircase
+- Mini-Max Sum
+- Birthday Cake Candles
+- Grading Students
+- Kangaroo
+- Breaking the Records
+- Apple and Orange
+- Migratory Birds
+- Solve Me First
+- Sales by Match
+- Cut the Sticks
+
+---
+
 ## Key Algorithmic Techniques
 
 - Matrix traversal
@@ -148,7 +183,7 @@ I have achieved a 3-Star Problem Solving badge on HackerRank as required for thi
 
 ## Learning Outcome
 
-Through these problems, I practised selecting appropriate data structures and designing solutions according to the required time and space constraints. The exercises improved my understanding of efficient traversal, query processing, string manipulation, and frequency-based searching.
+Through these problems, I practised selecting appropriate data structures and designing solutions according to the required time and space constraints. The exercises improved my understanding of efficient traversal, query processing, string manipulation, frequency-based searching, and algorithmic optimisation.
 
 ---
 
