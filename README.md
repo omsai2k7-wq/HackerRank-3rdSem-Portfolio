@@ -125,9 +125,11 @@ https://www.hackerrank.com/challenges/sparse-arrays/problem
 
 ---
 
-## HackerRank Badge
+## HackerRank Achievement
 
-Badge screenshot will be added here after achieving the required badge level.
+I have achieved a 3-Star Problem Solving badge on HackerRank as required for this activity.
+
+![HackerRank 3-Star Problem Solving Badge](3-Star-Badge.png)
 
 ---
 
