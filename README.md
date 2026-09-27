@@ -2,600 +2,831 @@
 
 This repository contains my 3rd Semester B.Tech CSE HackerRank Algorithmic Problem-Solving Portfolio, implemented using Java 8.
 
-The portfolio demonstrates my ability to solve algorithmic problems, analyse time and space complexity, implement efficient solutions, and maintain a structured programming portfolio using GitHub.
+## Links
 
-## Important Links
-
-GitHub Repository:
+GitHub Repository:  
 https://github.com/omsai2k7-wq/HackerRank-3rdSem-Portfolio
 
-HackerRank Profile:
+HackerRank Profile:  
 https://www.hackerrank.com/profile/omsai2k7
 
 ## Technology Used
 
-Programming Language: Java 8
+| Category | Details |
+|---|---|
+| Programming Language | Java 8 |
+| Platform | HackerRank |
+| Repository Platform | GitHub |
 
-Platform: HackerRank
+## Repository Structure
 
-Repository Platform: GitHub
+    HackerRank-3rdSem-Portfolio/
+    │
+    ├── Diagonal-Difference/
+    │   └── Solution.java
+    │
+    ├── Dynamic-Array/
+    │   └── Solution.java
+    │
+    ├── Time-Conversion/
+    │   └── Solution.java
+    │
+    ├── Compare-the-Triplets/
+    │   └── Solution.java
+    │
+    ├── Sparse-Arrays/
+    │   └── Solution.java
+    │
+    ├── HR1.png
+    ├── HR2.png
+    ├── HR3.png
+    ├── HR4.png
+    ├── HR5.png
+    ├── HR6.png
+    ├── HR7.png
+    ├── HR8.png
+    ├── HR9.png
+    ├── HR10.png
+    ├── HR11.png
+    ├── HR12.png
+    ├── HR13.png
+    ├── HR14.png
+    ├── HR15.png
+    ├── HR16.png
+    ├── HR17.png
+    ├── HR18.png
+    ├── HR19.png
+    ├── HR20.png
+    ├── 3-Star-Badge.png
+    └── README.md
 
-
-# Repository Structure
-
-HackerRank-3rdSem-Portfolio/
-│
-├── Diagonal-Difference/
-│   └── Solution.java
-│
-├── Dynamic-Array/
-│   └── Solution.java
-│
-├── Time-Conversion/
-│   └── Solution.java
-│
-├── Compare-the-Triplets/
-│   └── Solution.java
-│
-├── Sparse-Arrays/
-│   └── Solution.java
-│
-├── HR1.png
-├── HR2.png
-├── HR3.png
-├── HR4.png
-├── HR5.png
-├── HR6.png
-├── HR7.png
-├── HR8.png
-├── HR9.png
-├── HR10.png
-├── HR11.png
-├── HR12.png
-├── HR13.png
-├── HR14.png
-├── HR15.png
-├── HR16.png
-├── HR17.png
-├── HR18.png
-├── HR19.png
-├── HR20.png
-│
-├── 3-Star-Badge.png
-└── README.md
-
-
-# HackerRank Problems
+# Mandatory HackerRank Problems
 
 ## 1. Diagonal Difference
 
-The problem requires calculating the absolute difference between the sums of the two diagonals of a square matrix.
+### Problem Description
 
-Implementation: Java 8
+Given a square matrix, calculate the absolute difference between the sums of its two diagonals.
 
-Approach:
-The matrix is traversed once. During the traversal, the elements belonging to the primary diagonal are added to one sum, while the elements belonging to the secondary diagonal are added to another sum. The absolute difference between the two diagonal sums is then calculated.
+### Implementation
 
-Time Complexity: O(N)
+The Java 8 solution traverses the matrix and calculates the sum of the primary and secondary diagonals.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+For every row, the primary diagonal element is accessed using the same row and column index. The secondary diagonal element is accessed using the row index and the reversed column index.
+
+The absolute difference between the two sums is returned.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/diagonal-difference/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Diagonal Difference](HR1.png)
 
+---
 
 ## 2. Dynamic Array
 
-The problem requires maintaining multiple dynamic sequences and processing queries that determine which sequence should be accessed or modified.
+### Problem Description
 
-Implementation: Java 8
+The problem involves maintaining multiple dynamic sequences and processing two types of queries that add values to sequences or retrieve values from them.
 
-Approach:
-An array of sequences is maintained. For each query, the sequence index is calculated using the query values and the current value of the last answer. Type-1 queries add an element to the selected sequence, while type-2 queries retrieve an element and update the last answer.
+### Implementation
 
-Time Complexity: O(N + Q)
+The Java 8 solution uses dynamic lists to store the sequences and processes each query according to the required rules.
 
-Space Complexity: O(N)
+### Approach
 
-HackerRank:
+For each query, the sequence index is calculated using the given values and the current value of `lastAnswer`.
+
+Type 1 queries append an element to the selected sequence.
+
+Type 2 queries retrieve the required element and update `lastAnswer`.
+
+### Time Complexity
+
+O(N + Q)
+
+### Space Complexity
+
+O(N)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/dynamic-array/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Dynamic Array](HR2.png)
 
+---
 
 ## 3. Time Conversion
 
-The problem requires converting a time from the 12-hour AM/PM format into the 24-hour format.
+### Problem Description
 
-Implementation: Java 8
+Convert a time from 12-hour AM/PM format to 24-hour format.
 
-Approach:
-The input string is separated into the hour, minute, second, and AM/PM components. For PM times, 12 is added when required, while 12 AM is converted to 00. The resulting values are then combined into the required 24-hour format.
+### Implementation
 
-Time Complexity: O(1)
+The Java 8 solution separates the hour, minute, second and AM/PM components and converts the hour according to the required format.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+For PM times, 12-hour values are converted appropriately to 24-hour notation.
+
+For 12 AM, the hour is changed to `00`.
+
+All other values remain unchanged.
+
+### Time Complexity
+
+O(1)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/time-conversion/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Time Conversion](HR3.png)
 
+---
 
 ## 4. Compare the Triplets
 
-The problem requires comparing the scores of Alice and Bob across three categories and calculating the points obtained by each participant.
+### Problem Description
 
-Implementation: Java 8
+Compare Alice's and Bob's scores across three categories and calculate the points obtained by each participant.
 
-Approach:
-Each corresponding score of Alice and Bob is compared. If Alice's score is higher, Alice receives one point. If Bob's score is higher, Bob receives one point. Equal scores do not contribute a point.
+### Implementation
 
-Time Complexity: O(1)
+The corresponding values from the two arrays are compared using conditional statements.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+If Alice's value is greater, Alice receives one point.
+
+If Bob's value is greater, Bob receives one point.
+
+If both values are equal, neither receives a point.
+
+### Time Complexity
+
+O(1)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/compare-the-triplets/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Compare the Triplets](HR4.png)
 
+---
 
 ## 5. Sparse Arrays
 
-The problem requires determining how many times each query string occurs in a collection of input strings.
+### Problem Description
 
-Implementation: Java 8
+Given a collection of strings and a set of query strings, determine how many times each query occurs in the collection.
 
-Approach:
-The strings are processed and their frequencies are maintained. Each query is then checked against the stored frequency information to determine how many times it occurs.
+### Implementation
 
-Time Complexity: O(N + Q)
+A `HashMap` is used to store the frequency of each string.
 
-Space Complexity: O(N)
+### Approach
 
-HackerRank:
+Each input string is stored in a frequency map.
+
+For every query, the corresponding frequency is retrieved from the map.
+
+If the query does not exist, the frequency is considered zero.
+
+### Time Complexity
+
+O(N + Q)
+
+### Space Complexity
+
+O(N)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/sparse-arrays/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Sparse Arrays](HR5.png)
 
+---
 
 # Complexity Summary
 
-| Problem | Time Complexity | Space Complexity |
-|---|---|---|
-| Diagonal Difference | O(N) | O(1) |
-| Dynamic Array | O(N + Q) | O(N) |
-| Time Conversion | O(1) | O(1) |
-| Compare the Triplets | O(1) | O(1) |
-| Sparse Arrays | O(N + Q) | O(N) |
-
+| No. | Problem | Time Complexity | Space Complexity |
+|---:|---|---|---|
+| 1 | Diagonal Difference | O(N) | O(1) |
+| 2 | Dynamic Array | O(N + Q) | O(N) |
+| 3 | Time Conversion | O(1) | O(1) |
+| 4 | Compare the Triplets | O(1) | O(1) |
+| 5 | Sparse Arrays | O(N + Q) | O(N) |
 
 # HackerRank 3-Star Achievement
 
-I achieved the required 3-Star Problem Solving badge on HackerRank.
+The required HackerRank 3-Star Problem Solving achievement has been earned and is included in the repository.
 
 ![HackerRank 3-Star Badge](3-Star-Badge.png)
 
-HackerRank Profile:
-https://www.hackerrank.com/profile/omsai2k7
+### HackerRank Profile
 
+https://www.hackerrank.com/profile/omsai2k7
 
 # Additional HackerRank Practice
 
-In addition to the five mandatory problems, I completed several additional HackerRank challenges to further develop my algorithmic problem-solving skills.
-
 ## 6. Simple Array Sum
 
-The problem requires calculating the sum of all elements present in an integer array.
+### Problem Description
 
-Implementation: Java 8
+Calculate the sum of all elements in an integer array.
 
-Approach:
-The array is traversed from the first element to the last element. Each value is added to a running sum, which produces the total sum of the array.
+### Implementation
 
-Time Complexity: O(N)
+The array is traversed once and every element is added to a running total.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+A variable is maintained to store the running sum. Each array element is added to this variable.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/simple-array-sum/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Simple Array Sum](HR6.png)
 
+---
 
 ## 7. A Very Big Sum
 
-The problem requires calculating the sum of a large number of integers where the result may exceed the range of a standard integer.
+### Problem Description
 
-Implementation: Java 8
+Calculate the sum of a large number of integers where the result may exceed the range of a normal integer.
 
-Approach:
-The values are stored using the long data type. Each value is added to a running total while traversing the array once.
+### Implementation
 
-Time Complexity: O(N)
+The Java `long` data type is used to store the total sum.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+Each element is added to a `long` variable while traversing the array.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/a-very-big-sum/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![A Very Big Sum](HR7.png)
 
+---
 
 ## 8. Plus Minus
 
-The problem requires calculating the proportions of positive, negative, and zero values present in an array.
+### Problem Description
 
-Implementation: Java 8
+Calculate the proportions of positive, negative and zero values in an array.
 
-Approach:
-The array is traversed once while maintaining separate counters for positive values, negative values, and zeros. Each count is divided by the total number of elements to calculate the required proportions.
+### Implementation
 
-Time Complexity: O(N)
+Separate counters are maintained for positive numbers, negative numbers and zeros.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+The array is traversed once. Each value is classified as positive, negative or zero. The three counts are divided by the total number of elements.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/plus-minus/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Plus Minus](HR8.png)
 
+---
 
 ## 9. Staircase
 
-The problem requires printing a right-aligned staircase pattern with a specified height.
+### Problem Description
 
-Implementation: Java 8
+Print a right-aligned staircase pattern of a given height.
 
-Approach:
-Nested loops are used to generate each row of the staircase. The required number of spaces is printed first, followed by the required number of hash characters.
+### Implementation
 
-Time Complexity: O(N²)
+Nested loops are used to print spaces and hash characters for every row.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+For each row, the required number of spaces is printed first, followed by the required number of hash characters.
+
+### Time Complexity
+
+O(N²)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/staircase/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Staircase](HR9.png)
 
+---
 
 ## 10. Mini-Max Sum
 
-The problem requires finding the minimum and maximum sums that can be obtained by summing exactly four out of five given integers.
+### Problem Description
 
-Implementation: Java 8
+Calculate the minimum and maximum sums that can be obtained by summing four of five integers.
 
-Approach:
-The total sum of all five values is calculated. The minimum sum is obtained by subtracting the largest value from the total, while the maximum sum is obtained by subtracting the smallest value.
+### Implementation
 
-Time Complexity: O(N)
+The total sum, minimum value and maximum value are determined while processing the input.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+The minimum sum is calculated by subtracting the maximum value from the total sum.
+
+The maximum sum is calculated by subtracting the minimum value from the total sum.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/mini-max-sum/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Mini-Max Sum](HR10.png)
 
+---
 
 ## 11. Birthday Cake Candles
 
-The problem requires determining how many candles have the maximum height.
+### Problem Description
 
-Implementation: Java 8
+Determine how many candles have the maximum height.
 
-Approach:
-The array is traversed while maintaining the maximum candle height and a counter for the number of candles having that height. When a new maximum is found, the counter is reset.
+### Implementation
 
-Time Complexity: O(N)
+The maximum height and its frequency are tracked while traversing the array.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+Whenever a larger height is found, the maximum value is updated and the counter is reset.
+
+If the same maximum value occurs again, the counter is increased.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Birthday Cake Candles](HR11.png)
 
+---
 
 ## 12. Grading Students
 
-The problem requires modifying student grades according to the specified rounding rules.
+### Problem Description
 
-Implementation: Java 8
+Round student grades according to the specified grading rules.
 
-Approach:
-Each grade is examined individually. Grades below the passing threshold remain unchanged. For eligible grades, the difference between the grade and the next multiple of five is checked. The grade is rounded when the difference satisfies the required condition.
+### Implementation
 
-Time Complexity: O(N)
+Each grade is checked and rounded when it is within the required range of the next multiple of five.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+Grades below the passing threshold are not rounded.
+
+For other grades, the next multiple of five is calculated and the difference is checked.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/grading/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Grading Students](HR12.png)
 
+---
 
 ## 13. Kangaroo
 
-The problem determines whether two kangaroos starting at different positions and moving at different jump rates can land at the same location at the same time.
+### Problem Description
 
-Implementation: Java 8
+Determine whether two kangaroos starting at different positions and moving at different jump distances can land at the same location at the same time.
 
-Approach:
-The initial positions and jump distances are compared mathematically. The problem can be reduced to determining whether there is a non-negative integer number of jumps that results in both kangaroos reaching the same position simultaneously.
+### Implementation
 
-Time Complexity: O(1)
+The solution uses a mathematical condition to determine whether both kangaroos can meet.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+The difference in starting positions and jump distances is compared.
+
+A meeting is possible only when the required number of jumps is a non-negative integer.
+
+### Time Complexity
+
+O(1)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/kangaroo/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Kangaroo](HR13.png)
 
+---
 
 ## 14. Breaking the Records
 
-The problem requires counting how many times a player breaks their highest and lowest scoring records during a season.
+### Problem Description
 
-Implementation: Java 8
+Count how many times the highest and lowest scoring records are broken during a season.
 
-Approach:
-The scores are processed sequentially. The current highest and lowest scores are maintained. Whenever a score exceeds the highest score or falls below the lowest score, the corresponding record counter is increased.
+### Implementation
 
-Time Complexity: O(N)
+The current maximum and minimum scores are maintained while processing the scores.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+Every score is compared with the current maximum and minimum.
+
+If a new maximum is found, the maximum record counter increases.
+
+If a new minimum is found, the minimum record counter increases.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Breaking the Records](HR14.png)
 
+---
 
 ## 15. Apple and Orange
 
-The problem requires determining how many apples and oranges land within the boundaries of a house.
+### Problem Description
 
-Implementation: Java 8
+Determine how many apples and oranges land within the boundaries of a house.
 
-Approach:
-For each fruit, its landing position is calculated by adding its distance from the tree to the tree's position. The resulting position is checked against the left and right boundaries of the house.
+### Implementation
 
-Time Complexity: O(A + O)
+The landing position of each fruit is calculated and checked against the house boundaries.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+For every apple and orange, its distance from the corresponding tree is added to the tree's position.
+
+The resulting position is checked to determine whether the fruit lands on the house.
+
+### Time Complexity
+
+O(A + O)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/apple-and-orange/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Apple and Orange](HR15.png)
 
+---
 
 ## 16. Migratory Birds
 
-The problem requires finding the bird type that occurs most frequently in the given list. If multiple types have the same highest frequency, the smallest type number is selected.
+### Problem Description
 
-Implementation: Java 8
+Find the bird type that occurs most frequently in the given list.
 
-Approach:
-The frequency of each bird type is counted while processing the array. The type with the highest frequency is selected, with the smaller type number being preferred when frequencies are equal.
+### Implementation
 
-Time Complexity: O(N)
+The frequency of each bird type is tracked while processing the array.
 
-Space Complexity: O(K)
+### Approach
 
-HackerRank:
+A frequency structure is used to count occurrences.
+
+The bird type with the highest frequency is selected. If multiple types have the same frequency, the smallest type number is selected.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(K)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/migratory-birds/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Migratory Birds](HR16.png)
 
+---
 
 ## 17. Solve Me First
 
-The problem requires calculating the sum of two integers.
+### Problem Description
 
-Implementation: Java 8
+Calculate the sum of two integers.
 
-Approach:
-The two input integers are read and added together. The resulting value is returned as the answer.
+### Implementation
 
-Time Complexity: O(1)
+The two input integers are read and added together.
 
-Space Complexity: O(1)
+### Approach
 
-HackerRank:
+The values are directly added and the result is returned.
+
+### Time Complexity
+
+O(1)
+
+### Space Complexity
+
+O(1)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/solve-me-first/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Solve Me First](HR17.png)
 
+---
 
 ## 18. Sales by Match
 
-The problem requires determining the number of matching pairs of socks in a pile.
+### Problem Description
 
-Implementation: Java 8
+Determine the number of matching pairs of socks in a pile.
 
-Approach:
-The frequency of each sock colour is tracked. Whenever two socks of the same colour are available, they form one pair. The total number of pairs is calculated from the frequencies.
+### Implementation
 
-Time Complexity: O(N)
+The frequency of each sock colour is tracked to determine the number of complete pairs.
 
-Space Complexity: O(K)
+### Approach
 
-HackerRank:
+Each sock colour is counted.
+
+For every colour, the number of complete pairs is calculated by dividing its frequency by two.
+
+### Time Complexity
+
+O(N)
+
+### Space Complexity
+
+O(K)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/sock-merchant/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Sales by Match](HR18.png)
 
+---
 
 ## 19. Cut the Sticks
 
-The problem requires repeatedly cutting the sticks by the length of the shortest remaining stick and reporting the number of sticks before each cut.
+### Problem Description
 
-Implementation: Java 8
+Repeatedly cut all sticks by the length of the shortest remaining stick and report the number of sticks before each cut.
 
-Approach:
-The shortest remaining stick length is identified. All sticks are reduced by that length, and sticks that reach zero are removed. The process continues until no sticks remain.
+### Implementation
 
-Time Complexity: O(N²)
+The remaining sticks are processed repeatedly until all sticks have been removed.
 
-Space Complexity: O(N)
+### Approach
 
-HackerRank:
+The shortest remaining stick length is determined.
+
+That length is subtracted from every remaining stick and sticks that reach zero are removed.
+
+The process continues until no sticks remain.
+
+### Time Complexity
+
+O(N²)
+
+### Space Complexity
+
+O(N)
+
+### HackerRank Problem
+
 https://www.hackerrank.com/challenges/cut-the-sticks/problem
 
-Submission Screenshot:
+### Submission Screenshot
 
 ![Cut the Sticks](HR19.png)
 
+---
 
 ## 20. Additional HackerRank Practice
 
-This screenshot documents the additional HackerRank problem included as HR20.
+This section documents the additional HackerRank problem represented by `HR20.png`.
 
-Implementation: Java 8
+### Problem Description
 
-Approach:
-The screenshot provides evidence of the accepted HackerRank submission and forms part of the additional problem-solving practice completed for this portfolio.
+Additional HackerRank problem-solving practice completed as part of the portfolio.
 
-Time Complexity: Not documented
+### Implementation
 
-Space Complexity: Not documented
+Implemented using Java 8.
 
-Submission Screenshot:
+### Approach
+
+The problem was solved and submitted successfully on HackerRank.
+
+### Time Complexity
+
+Not documented
+
+### Space Complexity
+
+Not documented
+
+### Submission Screenshot
 
 ![Additional HackerRank Practice](HR20.png)
 
+---
 
 # Additional Practice Summary
 
-| No. | Problem | Screenshot |
-|---|---|---|
-| 6 | Simple Array Sum | HR6.png |
-| 7 | A Very Big Sum | HR7.png |
-| 8 | Plus Minus | HR8.png |
-| 9 | Staircase | HR9.png |
-| 10 | Mini-Max Sum | HR10.png |
-| 11 | Birthday Cake Candles | HR11.png |
-| 12 | Grading Students | HR12.png |
-| 13 | Kangaroo | HR13.png |
-| 14 | Breaking the Records | HR14.png |
-| 15 | Apple and Orange | HR15.png |
-| 16 | Migratory Birds | HR16.png |
-| 17 | Solve Me First | HR17.png |
-| 18 | Sales by Match | HR18.png |
-| 19 | Cut the Sticks | HR19.png |
-| 20 | Additional HackerRank Practice | HR20.png |
+| No. | Problem | Time Complexity | Space Complexity | Screenshot |
+|---:|---|---|---|---|
+| 6 | Simple Array Sum | O(N) | O(1) | HR6.png |
+| 7 | A Very Big Sum | O(N) | O(1) | HR7.png |
+| 8 | Plus Minus | O(N) | O(1) | HR8.png |
+| 9 | Staircase | O(N²) | O(1) | HR9.png |
+| 10 | Mini-Max Sum | O(N) | O(1) | HR10.png |
+| 11 | Birthday Cake Candles | O(N) | O(1) | HR11.png |
+| 12 | Grading Students | O(N) | O(1) | HR12.png |
+| 13 | Kangaroo | O(1) | O(1) | HR13.png |
+| 14 | Breaking the Records | O(N) | O(1) | HR14.png |
+| 15 | Apple and Orange | O(A + O) | O(1) | HR15.png |
+| 16 | Migratory Birds | O(N) | O(K) | HR16.png |
+| 17 | Solve Me First | O(1) | O(1) | HR17.png |
+| 18 | Sales by Match | O(N) | O(K) | HR18.png |
+| 19 | Cut the Sticks | O(N²) | O(N) | HR19.png |
+| 20 | Additional HackerRank Practice | Not documented | Not documented | HR20.png |
 
+# Key Learning Outcomes
 
-# Key Algorithmic Techniques
+This portfolio helped develop practical skills in:
 
-The problems in this portfolio provided practice with several fundamental programming and algorithmic techniques.
-
-1. Array traversal
-
-2. Matrix traversal
-
-3. String manipulation
-
-4. Conditional statements
-
-5. Frequency counting
-
-6. HashMap-based data structures
-
-7. Dynamic arrays
-
+1. Algorithmic problem solving
+2. Array and matrix manipulation
+3. String processing
+4. Frequency counting
+5. HashMap usage
+6. Dynamic data structures
+7. Mathematical problem solving
 8. Query processing
+9. Time complexity analysis
+10. Space complexity analysis
+11. Algorithm optimisation
+12. Java programming
 
-9. Mathematical calculations
+# Reflection
 
-10. Pattern printing
+Through this activity, I developed a more systematic approach to algorithmic problem solving. The HackerRank problems helped me understand how to convert a problem statement into an efficient algorithm and then implement that algorithm using Java 8.
 
-11. Input and output handling
+One of the major concepts I learned was the importance of time and space complexity. Instead of focusing only on obtaining the correct output, I learned to consider how an algorithm performs as the input size increases. Problems involving arrays and frequency counting helped me understand how appropriate data structures can reduce unnecessary computation.
 
-12. Time complexity analysis
+I also gained practical experience with matrix traversal, string manipulation, dynamic arrays, hashing, conditional logic and mathematical reasoning. Solving multiple problems on HackerRank improved my ability to identify patterns and choose suitable approaches rather than relying on brute-force solutions.
 
-13. Space complexity analysis
+Maintaining the solutions in a structured GitHub repository also helped me understand the importance of code organisation, documentation and version control. The combination of HackerRank practice and GitHub portfolio development provided practical experience in both competitive programming and professional software development practices.
 
-14. Algorithm optimisation
+# Conclusion
 
+This portfolio demonstrates the application of fundamental data structures, algorithms and optimisation techniques through HackerRank problems.
 
-# Learning Outcome
+The five mandatory problems and additional practice problems provided hands-on experience with different categories of algorithmic challenges.
 
-Through this activity, I developed a more systematic approach to algorithmic problem solving.
-
-I learned to analyse problem requirements, identify suitable algorithms and data structures, implement solutions using Java, test solutions against different cases, and evaluate their time and space complexity.
-
-The mandatory problems provided practice with arrays, matrices, strings, dynamic arrays, and frequency-based searching. The additional HackerRank problems provided further practice with mathematical reasoning, array manipulation, frequency counting, conditional logic, pattern generation, and iterative processing.
-
-The activity also reinforced the importance of considering computational complexity while designing a solution. Instead of focusing only on obtaining the correct output, I learned to consider how efficiently a solution performs as the input size increases.
-
-Overall, this portfolio helped strengthen my Java programming, algorithmic thinking, debugging, optimisation, and competitive programming skills.
-
-
-# Portfolio Objectives
-
-This portfolio demonstrates:
-
-- Practical algorithmic problem-solving skills
-- Java 8 programming ability
-- Understanding of time and space complexity
-- Practical use of arrays and data structures
-- HackerRank problem-solving practice
-- Efficient algorithm implementation
-- Proper GitHub project organisation
-- Consistent programming practice
-
+The repository serves as a record of my 3rd Semester CSE programming practice and demonstrates my progress in Java-based algorithmic problem solving.
 
 # Author
 
-B.Tech Computer Science and Engineering - 3rd Semester
+B.Tech Computer Science and Engineering
+
+3rd Semester
 
 GitHub:
+
 https://github.com/omsai2k7-wq/HackerRank-3rdSem-Portfolio
 
 HackerRank:
+
 https://www.hackerrank.com/profile/omsai2k7
